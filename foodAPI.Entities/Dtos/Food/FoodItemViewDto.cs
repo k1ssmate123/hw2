@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using foodAPI.Entities.Dtos.IngredientAmount;
 using foodAPI.Entities.Dtos.Ingredients;
 
 namespace foodAPI.Entities.Dtos.Food

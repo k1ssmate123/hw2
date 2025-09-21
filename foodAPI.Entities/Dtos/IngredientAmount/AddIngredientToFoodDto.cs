@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using foodAPI.Entities.Dtos.Food;
 using foodAPI.Entities.Dtos.Ingredients;
 
-namespace foodAPI.Entities.Dtos
+namespace foodAPI.Entities.Dtos.IngredientAmount
 {
     public class AddIngredientToFoodDto
     {

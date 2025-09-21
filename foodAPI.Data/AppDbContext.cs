@@ -1,4 +1,4 @@
-﻿using foodAPI.Entities;
+﻿using foodAPI.Entities.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace foodAPI.Data

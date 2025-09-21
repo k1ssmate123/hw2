@@ -1,7 +1,8 @@
 
 using foodAPI.Data;
-using foodAPI.Logic;
-using foodAPI.Logic.Food;
+using foodAPI.Logic.FoodLogic;
+using foodAPI.Logic.Helper;
+using foodAPI.Logic.IngredientAmountLogic;
 using foodAPI.Logic.IngredientLogic;
 using Microsoft.EntityFrameworkCore;
 

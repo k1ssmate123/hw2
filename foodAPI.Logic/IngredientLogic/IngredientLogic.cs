@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
 using foodAPI.Data;
-using foodAPI.Entities;
 using foodAPI.Entities.Dtos.Ingredients;
+using foodAPI.Entities.Entities;
+using foodAPI.Logic.Helper;
 
 namespace foodAPI.Logic.IngredientLogic
 {

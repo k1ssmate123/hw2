@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using foodAPI.Data.Helpers;
 
-namespace foodAPI.Entities
+namespace foodAPI.Entities.Entities
 {
     public class IngredientAmount : IIdEntity
     {

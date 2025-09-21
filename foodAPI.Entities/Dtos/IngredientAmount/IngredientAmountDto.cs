@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace foodAPI.Entities.Dtos
+namespace foodAPI.Entities.Dtos.IngredientAmount
 {
     public class IngredientAmountDto
     {

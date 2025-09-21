@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using foodAPI.Data;
-using foodAPI.Entities;
-using foodAPI.Entities.Dtos;
+using foodAPI.Entities.Entities;
+using foodAPI.Entities.Dtos.IngredientAmount;
+using foodAPI.Logic.Helper;
 
-namespace foodAPI.Logic
+namespace foodAPI.Logic.IngredientAmountLogic
 {
     public class IngredientAmountLogic
     {
@@ -19,7 +20,7 @@ namespace foodAPI.Logic
         public IngredientAmountLogic(Repository<IngredientAmount> repository, DtoProvider provider)
         {
             this.repository = repository;
-            this.mapper = provider.Mapper;
+            mapper = provider.Mapper;
         }
 
         public async Task AddIngredientToFood(AddIngredientToFoodDto dto)

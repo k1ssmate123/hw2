@@ -9,12 +9,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using foodAPI.Entities;
 using foodAPI.Entities.Dtos.Food;
 using foodAPI.Entities.Dtos.Ingredients;
-using foodAPI.Entities.Dtos;
+using foodAPI.Entities.Dtos.IngredientAmount;
+using foodAPI.Entities.Entities;
 
-namespace foodAPI.Logic
+namespace foodAPI.Logic.Helper
 {
     public class DtoProvider
     {
@@ -27,7 +27,7 @@ namespace foodAPI.Logic
                 cfg.CreateMap<FoodItem, FoodItemViewDto>()
         .ForMember(dest => dest.Ingredients, opt => opt.MapFrom(src => src.IngredientAmounts))
         .ForMember(dest => dest.CaloriesAll, opt => opt.MapFrom(src => src.IngredientAmounts
-            .Sum(ia => (ia.AmountInGrams * ia.Ingredient.Calorie/100))));  
+            .Sum(ia => ia.AmountInGrams * ia.Ingredient.Calorie/100)));  
 
 
                 cfg.CreateMap<IngredientAmount, IngredientAmountDto>()

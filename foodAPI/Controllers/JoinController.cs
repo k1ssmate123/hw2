@@ -1,5 +1,5 @@
-﻿using foodAPI.Entities.Dtos;
-using foodAPI.Logic;
+﻿using foodAPI.Entities.Dtos.IngredientAmount;
+using foodAPI.Logic.IngredientAmountLogic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace foodAPI.Endpoint.Controllers
